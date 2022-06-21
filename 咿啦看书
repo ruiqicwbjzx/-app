@@ -1,0 +1,99 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"is_svip\":\"YES\"",
+      "matchValue" : "\"is_svip\":\"\\w+\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"isLbVip\":\"YES\"",
+      "matchValue" : "\"isLbVip\":\"\\w+\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_end_date\":1908270916000",
+      "matchValue" : "\"vip_end_date\":-\\d+",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip_type\":\"1\"",
+      "matchValue" : "\"vip_type\":\"\\\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"is_vip\":\"YES\"",
+      "matchValue" : "\"is_vip\":\"\\w+\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"message\":\"VIP用户\"",
+      "matchValue" : "\"message\":\"该用户不是VIP用户\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"code\":\"200\"",
+      "matchValue" : "\"code\":\"1000010007\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"status\":\"1\"",
+      "matchValue" : "\"status\":\"0\"",
+      "destiontion" : "response",
+      "isRegex" : false
+    }
+  ],
+  "enabled" : true,
+  "name" : "咦啦读书vip",
+  "description" : "",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "bookapi.ellabook.cn",
+      "path" : "\/rest\/api\/service"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "bookapi.ellabook.cn",
+      "path" : "\/rest\/api\/service"
+    }
+  ]
+}
